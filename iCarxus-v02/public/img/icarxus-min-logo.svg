@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="132" height="54.059" viewBox="0 0 132 54.059">
+  <g id="icarxus-min-logo" transform="translate(-131.731 -163.64)">
+    <g id="Grupo_80" data-name="Grupo 80" transform="translate(132.731 150.64)">
+      <g id="Grupo_79" data-name="Grupo 79" transform="translate(26.263 61.427)">
+        <path id="Trazado_175" data-name="Trazado 175" d="M142.367,229.035l.311-.539a2.183,2.183,0,0,0,1.5.547c.783,0,1.267-.319,1.267-.827,0-.539-.531-.779-1.295-1l-.343-.095c-.831-.228-1.5-.59-1.5-1.472,0-.949.779-1.578,1.948-1.578a2.553,2.553,0,0,1,1.771.629l-.353.548a2.031,2.031,0,0,0-1.413-.523c-.68,0-1.126.327-1.126.807,0,.523.48.716,1.043.882l.354.095c.815.236,1.732.653,1.732,1.637,0,.933-.823,1.555-2.043,1.555A2.677,2.677,0,0,1,142.367,229.035Z" transform="translate(-142.315 -224.067)"/>
+        <path id="Trazado_176" data-name="Trazado 176" d="M168.011,229.079v.653h-3.6V224.25h3.542v.653h-2.747v1.72h2.539v.653h-2.539v1.807h2.806Z" transform="translate(-155.715 -224.179)"/>
+        <path id="Trazado_177" data-name="Trazado 177" d="M190.867,229.678l-.229-4.156-1.9,4.156h-.453l-1.889-4.141-.228,4.141h-.791l.346-5.518h.85l1.94,4.243,1.933-4.243h.85l.346,5.518Z" transform="translate(-168.431 -224.125)"/>
+        <path id="Trazado_178" data-name="Trazado 178" d="M213.84,224.25h.791v5.483h-.791Z" transform="translate(-185.689 -224.179)"/>
+        <path id="Trazado_179" data-name="Trazado 179" d="M228.82,224.25h.5l3.645,4.132-.024-4.132h.791v5.483h-.5L229.6,225.6l.016,4.132h-.791Z" transform="translate(-194.773 -224.179)"/>
+        <path id="Trazado_180" data-name="Trazado 180" d="M254.08,227.718V224.25h.787v3.436a1.535,1.535,0,0,0,3.066,0V224.25h.791v3.468a2.336,2.336,0,0,1-4.644,0Z" transform="translate(-210.091 -224.179)"/>
+        <path id="Trazado_181" data-name="Trazado 181" d="M282.261,229.079v.653h-3.6V224.25H282.2v.653h-2.747v1.72h2.539v.653h-2.539v1.807h2.806Z" transform="translate(-224.996 -224.179)"/>
+        <path id="Trazado_182" data-name="Trazado 182" d="M298.26,224.25h.842l1.9,4.511,1.889-4.511h.846l-2.37,5.483h-.74Z" transform="translate(-236.881 -224.179)"/>
+        <path id="Trazado_183" data-name="Trazado 183" d="M322.1,226.884a2.8,2.8,0,1,1,2.806,2.814A2.657,2.657,0,0,1,322.1,226.884Zm4.79,0a1.991,1.991,0,1,0-1.984,2.161A1.968,1.968,0,0,0,326.89,226.884Z" transform="translate(-251.338 -224.07)"/>
+        <path id="Trazado_184" data-name="Trazado 184" d="M347.688,229.035,348,228.5a2.183,2.183,0,0,0,1.5.547c.783,0,1.267-.319,1.267-.827,0-.539-.531-.779-1.295-1l-.342-.095c-.831-.228-1.5-.59-1.5-1.472,0-.949.779-1.578,1.948-1.578a2.553,2.553,0,0,1,1.771.629l-.354.548a2.031,2.031,0,0,0-1.413-.523c-.68,0-1.126.327-1.126.807,0,.523.48.716,1.043.882l.354.095c.815.236,1.732.653,1.732,1.637,0,.933-.823,1.555-2.043,1.555A2.676,2.676,0,0,1,347.688,229.035Z" transform="translate(-266.822 -224.067)"/>
+      </g>
+      <text id="iCarxus" transform="translate(65 51)" fill="orange" font-size="38" font-family="Lato-Bold, Lato" font-weight="700"><tspan x="-65.084" y="0" fill="orange">i</tspan><tspan y="0" font-family="Lato-Black, Lato" font-weight="800" fill="#000">Car</tspan><tspan y="0" fill="orange">xus</tspan></text>
+    </g>
+  </g>
+</svg>

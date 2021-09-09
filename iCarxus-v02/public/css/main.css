@@ -1,0 +1,940 @@
+@charset "UTF-8";
+/*****************************
+        ABSTRACT
+*****************************/
+/*****************************
+            BASE
+*****************************/
+*, *:before, *:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+img {
+  width: 100%; }
+
+a {
+  text-decoration: none; }
+
+body {
+  background-color: #E6E6E6; }
+
+.text-center {
+  text-align: center; }
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #404040; }
+
+/*****************************
+        COMPONENTS
+*****************************/
+/**********Agencia***********/
+.header {
+  width: 100%;
+  background-color: white;
+  padding: 1rem 4rem;
+  box-shadow: 0 0.5rem 0.9rem rgba(0, 0, 0, 0.295);
+  position: fixed; }
+  .header .header__nav-header {
+    display: flex;
+    width: auto;
+    height: 3.5rem; }
+    .header .header__nav-header .header__nav-header__toggle {
+      width: auto;
+      height: auto;
+      cursor: pointer; }
+      .header .header__nav-header .header__nav-header__toggle i {
+        color: #FFA500;
+        font-size: 3rem;
+        padding: 0 1rem;
+        cursor: pointer; }
+  .header .header__nav-header__user-info {
+    display: flex;
+    width: 115rem;
+    height: auto; }
+    .header .header__nav-header__user-info i {
+      color: #404040;
+      font-size: 3rem;
+      padding: 0 1rem; }
+    .header .header__nav-header__user-info p {
+      padding: 0 1rem;
+      color: #404040;
+      font-size: 1.5rem;
+      font-family: "Roboto", sans-serif; }
+      .header .header__nav-header__user-info p span {
+        display: block;
+        font-size: 1rem; }
+  .header .header__nav-header__logo-box {
+    width: 8rem;
+    height: auto; }
+
+.l-navbar {
+  position: fixed;
+  z-index: 1;
+  width: 30rem;
+  height: 56rem;
+  background-color: #404040;
+  left: -30rem;
+  transition: 0.5s;
+  top: 5.5rem; }
+  .l-navbar__nav {
+    width: 100%;
+    height: 100%; }
+    .l-navbar__nav__aside-bar-list .aside-bar-link {
+      font-family: "PT Sans", sans-serif;
+      text-align: left;
+      color: white;
+      display: block;
+      padding: 3rem 3rem 3rem 8rem;
+      font-size: 1.5rem;
+      cursor: pointer; }
+      .l-navbar__nav__aside-bar-list .aside-bar-link .icon-link {
+        font-size: 2.5rem;
+        padding: 0 2rem 0 1rem;
+        text-align: center; }
+      .l-navbar__nav__aside-bar-list .aside-bar-link .aside-bar-link__collapse-menu {
+        text-align: center;
+        font-size: 1.2rem;
+        padding: 1rem 1rem; }
+        .l-navbar__nav__aside-bar-list .aside-bar-link .aside-bar-link__collapse-menu a {
+          padding: 1rem 4rem;
+          display: block;
+          text-align: left;
+          text-decoration: none;
+          color: white;
+          font-family: "PT Sans", sans-serif; }
+        .l-navbar__nav__aside-bar-list .aside-bar-link .aside-bar-link__collapse-menu :hover {
+          color: #FFA500; }
+      .l-navbar__nav__aside-bar-list .aside-bar-link .collapse-link {
+        padding: 0 1rem; }
+    .l-navbar__nav__aside-bar-list :hover {
+      color: #FFA500; }
+
+.show {
+  left: 0; }
+
+.active {
+  background-color: #696969; }
+
+.agencias {
+  display: flex; }
+  .agencias__box-agencias {
+    margin: 5.5rem 5rem 0 35rem;
+    width: 105rem;
+    height: 53rem;
+    display: flex;
+    flex-wrap: wrap; }
+    .agencias__box-agencias__contenido {
+      display: block;
+      margin: 2rem 1rem 0.5rem 5.5rem;
+      width: 24rem;
+      height: 13rem;
+      background-color: #404040;
+      box-shadow: 1rem 1rem 0.5rem rgba(255, 165, 0, 0.4); }
+      .agencias__box-agencias__contenido__nom-agencia {
+        width: 100%;
+        height: 25%; }
+        .agencias__box-agencias__contenido__nom-agencia p {
+          text-align: center;
+          font-family: "Roboto", sans-serif;
+          padding: 0.5rem 0;
+          font-size: 2rem;
+          color: #E6E6E6; }
+      .agencias__box-agencias__contenido__linea {
+        margin: 0 2rem 0 2rem;
+        width: 80%;
+        height: 2%;
+        background-color: #E6E6E6; }
+      .agencias__box-agencias__contenido__info-agencia {
+        width: 100%;
+        height: 48%;
+        display: flex; }
+        .agencias__box-agencias__contenido__info-agencia__img {
+          width: 45%;
+          height: 100%; }
+          .agencias__box-agencias__contenido__info-agencia__img .logo-agencia {
+            margin: 5% 20%;
+            width: 50%;
+            height: 80%; }
+        .agencias__box-agencias__contenido__info-agencia__info-text {
+          width: 55%;
+          height: 100%; }
+          .agencias__box-agencias__contenido__info-agencia__info-text p {
+            padding: 1rem 1rem;
+            font-family: "PT Sans", sans-serif;
+            color: #E6E6E6;
+            font-size: 1rem; }
+      .agencias__box-agencias__contenido__info-boton {
+        width: 100%;
+        height: 25%;
+        background-color: #FFA500; }
+        .agencias__box-agencias__contenido__info-boton p {
+          text-align: center;
+          color: #E6E6E6;
+          font-family: "Roboto", sans-serif;
+          font-size: 2rem;
+          cursor: pointer; }
+
+.collapse {
+  grid-template-columns: 20px max-content 1fr; }
+
+.collapse-link {
+  display: inline-flex;
+  cursor: pointer; }
+
+.aside-bar-link__collapse-menu {
+  display: none;
+  padding: 0.1rem 0.1rem; }
+
+.showCollapse {
+  display: block; }
+
+.rotate {
+  transform: rotate(180deg);
+  transition: .5s; }
+
+/**********Nueva Agencia******/
+.containe-new-agencia {
+  display: flex;
+  flex-direction: column;
+  background-color: #404040;
+  align-items: center;
+  justify-content: center;
+  margin: 5rem 55rem;
+  width: 55rem;
+  height: 40rem;
+  border-radius: 3px; }
+  .containe-new-agencia header {
+    font-family: "Roboto", sans-serif;
+    font-size: 2.5rem;
+    color: #E6E6E6;
+    margin: 1rem 1rem 1rem 1rem;
+    text-align: center; }
+  .containe-new-agencia .containe-new-agencia__form-outer {
+    width: 100%;
+    overflow: hidden; }
+    .containe-new-agencia .containe-new-agencia__form-outer form {
+      display: flex;
+      width: 500%; }
+      .containe-new-agencia .containe-new-agencia__form-outer form .page {
+        width: 25%; }
+        .containe-new-agencia .containe-new-agencia__form-outer form .page__title {
+          font-family: "PT Sans", sans-serif;
+          font-size: 3rem;
+          color: #E6E6E6;
+          text-align: center; }
+        .containe-new-agencia .containe-new-agencia__form-outer form .page__field input {
+          border: 0;
+          border-bottom: 1px solid #FFA500;
+          text-align: center;
+          font-family: "PT Sans", sans-serif;
+          font-size: 1.7rem;
+          background-color: #404040;
+          color: #E6E6E6; }
+        .containe-new-agencia .containe-new-agencia__form-outer form .page__field :focus {
+          outline: none; }
+        .containe-new-agencia .containe-new-agencia__form-outer form .page__field-num {
+          margin: 1.5rem 0.1rem 1rem 7rem;
+          display: inline-block; }
+          .containe-new-agencia .containe-new-agencia__form-outer form .page__field-num input {
+            width: 7rem;
+            text-align: left;
+            border: 0;
+            border-bottom: 1px solid #FFA500;
+            text-align: center;
+            font-family: "PT Sans", sans-serif;
+            font-size: 1.7rem;
+            background-color: #404040;
+            color: #696969; }
+        .containe-new-agencia .containe-new-agencia__form-outer form .page__cont-btn {
+          display: flex;
+          margin: 0rem 1rem 0rem 11rem; }
+          .containe-new-agencia .containe-new-agencia__form-outer form .page__cont-btn .cont-btn__field-boton-flecha {
+            margin: 0rem 4rem 0rem 4rem; }
+            .containe-new-agencia .containe-new-agencia__form-outer form .page__cont-btn .cont-btn__field-boton-flecha button {
+              outline: none;
+              background-color: #404040;
+              border: none;
+              cursor: pointer; }
+            .containe-new-agencia .containe-new-agencia__form-outer form .page__cont-btn .cont-btn__field-boton-flecha i {
+              background-color: #404040;
+              border: none;
+              color: #FFA500;
+              font-size: 3.5rem;
+              padding: 1rem 2rem 2rem 2rem;
+              margin: 0 1rem 0 1rem 0; }
+        .containe-new-agencia .containe-new-agencia__form-outer form .page .page__field-boton-flecha {
+          text-align: center; }
+          .containe-new-agencia .containe-new-agencia__form-outer form .page .page__field-boton-flecha button {
+            outline: none;
+            background-color: #404040;
+            border: none;
+            cursor: pointer; }
+          .containe-new-agencia .containe-new-agencia__form-outer form .page .page__field-boton-flecha i {
+            background-color: #404040;
+            border: none;
+            color: #FFA500;
+            font-size: 3.5rem;
+            padding: 1rem 2rem 2rem 2rem;
+            margin: 0 1rem 0 1rem 0; }
+        .containe-new-agencia .containe-new-agencia__form-outer form .page .page__field-boton {
+          text-align: center; }
+          .containe-new-agencia .containe-new-agencia__form-outer form .page .page__field-boton .regresar-boton {
+            outline: none;
+            border: none;
+            cursor: pointer;
+            background-color: white;
+            width: 100%;
+            height: 5.35rem;
+            color: #FFA500;
+            font-size: 2rem;
+            font-family: "Roboto", sans-serif;
+            border-radius: 0 0 3px 3px; }
+          .containe-new-agencia .containe-new-agencia__form-outer form .page .page__field-boton :hover {
+            background-color: #FFA500;
+            color: #404040; }
+
+.progress-bar {
+  display: flex;
+  justify-content: space-around;
+  margin: 1rem auto;
+  width: 65rem;
+  border-radius: 3px;
+  color: #404040;
+  padding: 0 2rem; }
+  .progress-bar__step {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    font-size: 2rem;
+    text-align: center; }
+    .progress-bar__step__bullet {
+      width: 25px;
+      height: 25px;
+      border: 2px solid #404040;
+      display: inline-block;
+      border-radius: 50%;
+      position: relative; }
+      .progress-bar__step__bullet span {
+        display: block;
+        font-family: "PT Sans", sans-serif;
+        transform: translateY(-0.6rem); }
+      .progress-bar__step__bullet :before, .progress-bar__step__bullet :after {
+        position: absolute;
+        content: '';
+        top: 1.5rem;
+        left: 2.7rem;
+        height: 3px;
+        width: 12rem;
+        background: #404040; }
+      .progress-bar__step__bullet :after {
+        background-color: #FFA500;
+        transform: scaleX(0);
+        transform-origin: left;
+        animation: animate 0.3s linear forwards; }
+    .progress-bar__step__check {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #FFA500;
+      display: none; }
+  .progress-bar :last-child .progress-bar__step__bullet :before, .progress-bar :last-child .progress-bar__step__bullet :after {
+    display: none; }
+
+@keyframes animate {
+  100% {
+    transform: scaleX(1); } }
+
+.stepper-nueva-agencia {
+  display: flex;
+  flex-direction: column;
+  background-color: #404040;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 65rem;
+  border-radius: 3px;
+  color: white; }
+  .stepper-nueva-agencia__titulo {
+    padding: 3rem 0 0 0; }
+    .stepper-nueva-agencia__titulo h2 {
+      font-family: "Roboto", sans-serif;
+      font-size: 2rem;
+      color: #E6E6E6; }
+    .stepper-nueva-agencia__titulo p {
+      text-align: center;
+      font-family: "PT Sans", sans-serif;
+      font-size: 1.5rem;
+      color: #E6E6E6; }
+  .stepper-nueva-agencia__body {
+    position: relative;
+    margin-top: 2rem;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 25.3rem;
+    overflow: hidden; }
+    .stepper-nueva-agencia__body__input-group {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .stepper-nueva-agencia__body__input-group__input {
+        display: block;
+        background-color: transparent;
+        color: #E6E6E6;
+        border: 0;
+        border-bottom: solid 2px #FFA500;
+        font-size: 1.5rem;
+        margin-top: 5rem;
+        text-align: center; }
+        .stepper-nueva-agencia__body__input-group__input--number {
+          display: inline-block;
+          width: 20%;
+          margin-left: 1rem; }
+        .stepper-nueva-agencia__body__input-group__input:first-child {
+          margin: 0; }
+        .stepper-nueva-agencia__body__input-group__input:focus {
+          outline: none; }
+    .stepper-nueva-agencia__body__step {
+      display: none;
+      background-color: #404040; }
+      .stepper-nueva-agencia__body__step--step-3 {
+        display: flex;
+        text-align: center;
+        margin-left: 5rem; }
+        .stepper-nueva-agencia__body__step--step-3__content {
+          display: flex;
+          justify-content: space-between;
+          width: 80%; }
+          .stepper-nueva-agencia__body__step--step-3__content__group-button-plan {
+            display: flex;
+            align-self: flex-start;
+            flex-direction: column; }
+          .stepper-nueva-agencia__body__step--step-3__content__description-plan {
+            background-color: #E6E6E6;
+            color: #404040;
+            flex-basis: calc(70% - 1rem); }
+            .stepper-nueva-agencia__body__step--step-3__content__description-plan p {
+              font-family: "PT Sans", sans-serif;
+              color: #404040; }
+            .stepper-nueva-agencia__body__step--step-3__content__description-plan__caracteristicas {
+              font-size: 2rem;
+              text-align: justify;
+              margin: 0 1rem 1rem 1rem; }
+            .stepper-nueva-agencia__body__step--step-3__content__description-plan__text-info-description {
+              text-align: justify;
+              font-size: 1.5rem;
+              margin: 0 1rem 1rem 1rem; }
+            .stepper-nueva-agencia__body__step--step-3__content__description-plan__precio {
+              text-align: center;
+              font-size: 3rem; }
+      .stepper-nueva-agencia__body__step--step-4 {
+        display: flex;
+        width: 75%;
+        flex-direction: column; }
+        .stepper-nueva-agencia__body__step--step-4 p {
+          font-family: "PT Sans", sans-serif;
+          font-size: 2rem;
+          text-align: center;
+          margin: 0 0 3rem 0;
+          color: #E6E6E6; }
+        .stepper-nueva-agencia__body__step--step-4__icono-subir {
+          color: #FFA500;
+          font-size: 8rem;
+          text-align: center; }
+      .stepper-nueva-agencia__body__step--step-5__agencia-exito p {
+        font-family: "PT Sans", sans-serif;
+        font-size: 3rem;
+        text-align: center;
+        color: #E6E6E6; }
+      .stepper-nueva-agencia__body__step--step-5__check-green {
+        color: #34B400;
+        font-size: 15rem;
+        text-align: center; }
+  .stepper-nueva-agencia__footer {
+    width: 100%; }
+    .stepper-nueva-agencia__footer__button-group {
+      text-align: center;
+      justify-content: center; }
+
+.active {
+  display: block; }
+
+.button {
+  background-color: transparent;
+  border: 0;
+  padding: 2rem; }
+  .button--btn-100-blanco {
+    display: inline-block;
+    width: 100%;
+    padding: 1.8rem 10rem;
+    background-color: white;
+    color: #FFA500;
+    transition: ease-in-out 0.3s; }
+    .button--btn-100-blanco:hover {
+      background-color: #FFA500;
+      color: white; }
+    .button--btn-100-blanco:focus {
+      outline: none; }
+  .button--btn-gris {
+    color: #FFA500;
+    font-size: 2.5rem; }
+    .button--btn-gris:focus {
+      outline: none; }
+    .button--btn-gris:hover {
+      cursor: pointer; }
+  .button--btn-plan {
+    border-radius: 3px;
+    margin: 0.5rem 0;
+    padding: .7rem 1.2rem;
+    background-color: white;
+    color: #404040;
+    font-family: "PT Sans", sans-serif;
+    font-size: 2rem; }
+    .button--btn-plan:hover {
+      background-color: #FFA500;
+      color: #E6E6E6;
+      transition: ease-in-out 0.3s; }
+
+.btn2 {
+  background-color: transparent;
+  border: 0.2rem;
+  border-style: solid;
+  border-radius: 0.3rem;
+  border-color: #FFA500;
+  width: 15rem;
+  margin: 0.5rem 3rem; }
+  .btn2--naranja-negro {
+    font-family: "PT Sans", sans-serif;
+    font-size: 1.6rem;
+    color: #FFA500; }
+    .btn2--naranja-negro:hover {
+      border: 0.2rem;
+      font-weight: bold;
+      border-style: solid;
+      border-color: #FFA500;
+      transition: 0.3s; }
+  .btn2--naranja-negro-1 {
+    margin: 0 10rem;
+    font-family: "PT Sans", sans-serif;
+    font-size: 1.6rem;
+    color: #FFA500; }
+    .btn2--naranja-negro-1:hover {
+      border: 0.2rem;
+      font-weight: bold;
+      border-style: solid;
+      border-color: #FFA500;
+      transition: 0.3s; }
+
+.espacio {
+  width: 100%;
+  height: 5rem; }
+
+.body-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 4rem 0;
+  width: 100%; }
+  .body-container__container {
+    width: 60rem;
+    background-color: #404040;
+    border-radius: 5px;
+    text-align: center;
+    padding: 1rem 3rem 1rem 3rem; }
+    .body-container__container__progress-bar {
+      display: flex;
+      margin: 4rem 0;
+      color: #E6E6E6; }
+      .body-container__container__progress-bar__step {
+        position: relative;
+        text-align: center;
+        width: 100%; }
+        .body-container__container__progress-bar__step:last-child .body-container__container__progress-bar__step__bullet:before {
+          display: none; }
+        .body-container__container__progress-bar__step:last-child .body-container__container__progress-bar__step__bullet:after {
+          display: none; }
+        .body-container__container__progress-bar__step__bullet {
+          position: relative;
+          height: 2.5rem;
+          width: 2.5rem;
+          border: 0.2rem solid #E6E6E6;
+          display: inline-block;
+          border-radius: 50%;
+          transition: 0.2s; }
+          .body-container__container__progress-bar__step__bullet:before {
+            position: absolute;
+            content: '';
+            bottom: 1.1rem;
+            right: -8rem;
+            height: 0.3rem;
+            width: 7.3rem;
+            background: #E6E6E6; }
+          .body-container__container__progress-bar__step__bullet:after {
+            position: absolute;
+            content: '';
+            bottom: 1.1rem;
+            right: -8rem;
+            height: 0.3rem;
+            width: 7.3rem;
+            background: #E6E6E6; }
+          .body-container__container__progress-bar__step__bullet .active .body-container__container__progress-bar__step__bullet:after {
+            background: #FFA500;
+            transform: scaleX(0);
+            transform-origin: left;
+            animation: animate 0.3s linear forwards; }
+
+@keyframes animate {
+  100% {
+    transform: scaleX(1); } }
+          .body-container__container__progress-bar__step__bullet span {
+            font-weight: bold;
+            font-size: 1.7rem;
+            line-height: 2rem;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%); }
+          .body-container__container__progress-bar__step__bullet .active span {
+            color: red; }
+        .body-container__container__progress-bar__step__bullet .active {
+          border-color: #FFA500; }
+        .body-container__container__progress-bar__step__check {
+          position: absolute;
+          left: 50%;
+          top: 40%;
+          font-size: 1.5rem;
+          transform: translate(-50%, -50%);
+          display: none; }
+    .body-container__container__form-outer {
+      width: 100%;
+      overflow: hidden; }
+      .body-container__container__form-outer form {
+        display: flex;
+        width: 400%; }
+        .body-container__container__form-outer form .page {
+          width: 25%;
+          transition: margin-left 0.3s ease-in-out; }
+          .body-container__container__form-outer form .page__title {
+            text-align: center;
+            font-family: "Roboto", sans-serif;
+            font-size: 2.5rem;
+            color: #E6E6E6;
+            font-weight: bold; }
+          .body-container__container__form-outer form .page__field {
+            margin: 2rem 0;
+            width: 54rem;
+            height: 3rem; }
+            .body-container__container__form-outer form .page__field input {
+              width: 50%;
+              height: 100%;
+              background-color: transparent;
+              color: #E6E6E6;
+              border: 0;
+              border-bottom: solid 2px #FFA500;
+              font-size: 1.5rem;
+              text-align: center; }
+            .body-container__container__form-outer form .page__field :focus {
+              outline: none; }
+            .body-container__container__form-outer form .page__field button {
+              background-color: transparent;
+              border: none;
+              cursor: pointer;
+              color: #FFA500;
+              font-size: 2.5rem;
+              width: 5rem;
+              height: 100%; }
+            .body-container__container__form-outer form .page__field__btns button {
+              background-color: transparent;
+              margin: 0 5rem;
+              border: none;
+              cursor: pointer;
+              color: #FFA500;
+              font-size: 2.5rem;
+              width: 5rem;
+              height: 100%; }
+            .body-container__container__form-outer form .page__field__btns-2 {
+              margin: 17rem 0 0 0;
+              height: 3rem; }
+              .body-container__container__form-outer form .page__field__btns-2 button {
+                background-color: transparent;
+                margin: 0 5rem;
+                border: none;
+                cursor: pointer;
+                color: #FFA500;
+                font-size: 2.5rem;
+                width: 5rem;
+                height: 100%; }
+            .body-container__container__form-outer form .page__field__numeros {
+              display: flex;
+              margin: 2rem 13rem; }
+            .body-container__container__form-outer form .page__field__plan-info {
+              width: 100%;
+              display: flex;
+              height: 19rem; }
+              .body-container__container__form-outer form .page__field__plan-info__plan {
+                justify-content: center;
+                text-align: center; }
+                .body-container__container__form-outer form .page__field__plan-info__plan--planes {
+                  width: 10rem;
+                  height: 3rem;
+                  background-color: #E6E6E6;
+                  font-family: "PT Sans", sans-serif;
+                  font-size: 1.8rem;
+                  margin: 0.65rem 2rem;
+                  border-color: #FFA500;
+                  border-radius: 3px;
+                  cursor: pointer; }
+                .body-container__container__form-outer form .page__field__plan-info__plan :hover {
+                  background-color: #FFA500;
+                  color: #E6E6E6; }
+              .body-container__container__form-outer form .page__field__plan-info__plan-informacion {
+                background-color: #E6E6E6;
+                font-family: "PT Sans", sans-serif;
+                height: 100%; }
+                .body-container__container__form-outer form .page__field__plan-info__plan-informacion--description {
+                  margin: 0 2rem;
+                  font-family: "PT Sans", sans-serif;
+                  font-size: 1.3rem;
+                  text-align: justify; }
+                .body-container__container__form-outer form .page__field__plan-info__plan-informacion--features {
+                  margin: 0.5rem 2rem;
+                  font-family: "PT Sans", sans-serif;
+                  font-size: 1.6rem;
+                  text-align: justify; }
+                .body-container__container__form-outer form .page__field__plan-info__plan-informacion__info-caracteristicas {
+                  display: flex;
+                  margin: 0 2rem;
+                  text-align: justify;
+                  font-size: 1.2rem; }
+                  .body-container__container__form-outer form .page__field__plan-info__plan-informacion__info-caracteristicas--izq {
+                    font-size: 1.2rem;
+                    margin: 0 1rem 0 0; }
+                  .body-container__container__form-outer form .page__field__plan-info__plan-informacion__info-caracteristicas--der {
+                    font-size: 1.2rem;
+                    margin: 0 0 0 1rem;
+                    text-align: center;
+                    color: #FFA500; }
+                .body-container__container__form-outer form .page__field__plan-info__plan-informacion--price {
+                  margin: 1rem 0;
+                  font-size: 2.2rem;
+                  font-weight: bold; }
+            .body-container__container__form-outer form .page__field__info-fiscal {
+              justify-content: center;
+              font-size: 1.5rem;
+              margin: 1rem 1rem;
+              color: #E6E6E6; }
+            .body-container__container__form-outer form .page__field__icono-subir i {
+              font-size: 5rem;
+              color: #FFA500;
+              margin: 2rem 0; }
+            .body-container__container__form-outer form .page__field__icono-subir p {
+              font-size: 2rem;
+              color: #E6E6E6; }
+            .body-container__container__form-outer form .page__field__icono-listo {
+              color: #34B400;
+              font-size: 10rem; }
+
+/*****Información Agencia*****/
+.encabezado-agencia {
+  width: 100%;
+  height: 32rem;
+  background-color: #404040;
+  display: inline-block;
+  margin: 5.5rem 0 0 0; }
+  .encabezado-agencia__logo-info {
+    display: inline-block;
+    text-align: center;
+    width: 32rem;
+    height: 22rem;
+    margin: 1rem 0 0 52rem; }
+    .encabezado-agencia__logo-info__img-logo-info {
+      margin: 0 auto;
+      width: 60%;
+      height: 70%; }
+      .encabezado-agencia__logo-info__img-logo-info img {
+        width: 100%;
+        height: 100%; }
+    .encabezado-agencia__logo-info__line {
+      margin: 1rem 0;
+      width: 100%;
+      height: 0.4rem;
+      background-color: #FFA500; }
+    .encabezado-agencia__logo-info p {
+      color: white;
+      font-family: "Roboto", sans-serif;
+      font-size: 2.4rem; }
+  .encabezado-agencia__botones {
+    display: flex;
+    width: 40rem;
+    height: 7rem;
+    margin: 0 90rem; }
+    .encabezado-agencia__botones a {
+      color: #FFA500; }
+
+.mapa-detalles {
+  display: flex; }
+  .mapa-detalles__mapa-direction {
+    width: 95rem;
+    height: 45rem;
+    position: relative; }
+    .mapa-detalles__mapa-direction__direccion-mapa {
+      position: absolute;
+      width: 100%;
+      height: 4rem;
+      background-color: #FFA500;
+      opacity: 0.7; }
+      .mapa-detalles__mapa-direction__direccion-mapa p {
+        color: white;
+        font-family: "PT Sans", sans-serif;
+        font-weight: bold;
+        font-size: 2rem;
+        padding: 0 1rem; }
+  .mapa-detalles__detalles-paquete-info {
+    width: 41rem;
+    height: 49rem;
+    background-color: white;
+    text-align: center; }
+    .mapa-detalles__detalles-paquete-info__titulo {
+      margin: 1rem 0;
+      color: #FFA500;
+      font-family: "Roboto", sans-serif;
+      font-size: 3rem;
+      font-weight: bold; }
+    .mapa-detalles__detalles-paquete-info__estatus--p-estatus {
+      font-family: "Roboto", sans-serif;
+      font-size: 2rem;
+      color: #404040; }
+    .mapa-detalles__detalles-paquete-info__description {
+      margin: 2rem auto;
+      display: flex;
+      justify-content: center; }
+      .mapa-detalles__detalles-paquete-info__description__des-info {
+        width: 90%;
+        display: flex;
+        align-items: center; }
+        .mapa-detalles__detalles-paquete-info__description__des-info__info-1 {
+          width: 35%;
+          display: flex;
+          text-align: left; }
+          .mapa-detalles__detalles-paquete-info__description__des-info__info-1--info-negro p {
+            color: #404040;
+            font-family: "PT Sans", sans-serif;
+            font-size: 1.7rem;
+            margin: 1rem 1rem; }
+          .mapa-detalles__detalles-paquete-info__description__des-info__info-1--info-naranja p {
+            color: #FFA500;
+            font-family: "PT Sans", sans-serif;
+            font-size: 1.7rem;
+            margin: 1rem 1rem; }
+        .mapa-detalles__detalles-paquete-info__description__des-info__linea {
+          background-color: #FFA500;
+          width: 0.4rem;
+          height: 90%;
+          margin: 0 1rem; }
+        .mapa-detalles__detalles-paquete-info__description__des-info__info-2 {
+          width: 45%;
+          height: 100%;
+          display: inline-block;
+          text-align: center;
+          margin: 0 2rem; }
+          .mapa-detalles__detalles-paquete-info__description__des-info__info-2__header-des {
+            width: 100%;
+            height: 20%; }
+            .mapa-detalles__detalles-paquete-info__description__des-info__info-2__header-des p {
+              color: #FFA500;
+              font-family: "Roboto", sans-serif;
+              font-size: 1.7rem; }
+          .mapa-detalles__detalles-paquete-info__description__des-info__info-2__text-des {
+            margin: 1rem 0 0 0; }
+            .mapa-detalles__detalles-paquete-info__description__des-info__info-2__text-des p {
+              color: #404040;
+              font-family: "PT Sans", sans-serif;
+              font-size: 1.3rem; }
+    .mapa-detalles__detalles-paquete-info__estado-agencia {
+      width: 100%;
+      height: 43%;
+      display: inline-block;
+      justify-content: center;
+      text-align: center; }
+      .mapa-detalles__detalles-paquete-info__estado-agencia__estado-titulo {
+        margin: 1rem 0;
+        width: 100%;
+        height: 4rem; }
+        .mapa-detalles__detalles-paquete-info__estado-agencia__estado-titulo p {
+          color: #FFA500;
+          font-family: "Roboto", sans-serif;
+          font-size: 2.5rem;
+          font-weight: bold; }
+      .mapa-detalles__detalles-paquete-info__estado-agencia__estado-info {
+        display: flex;
+        width: 100%;
+        height: 14rem; }
+        .mapa-detalles__detalles-paquete-info__estado-agencia__estado-info__info-estado-1 {
+          margin: 2rem 1rem 2rem 4rem;
+          width: 15rem;
+          height: 10rem; }
+          .mapa-detalles__detalles-paquete-info__estado-agencia__estado-info__info-estado-1 p {
+            text-align: justify;
+            color: #FFA500;
+            font-family: "PT Sans", sans-serif;
+            font-size: 1.5rem; }
+        .mapa-detalles__detalles-paquete-info__estado-agencia__estado-info__info-estado-2 {
+          margin: 2rem 0;
+          width: 10rem;
+          height: 10rem; }
+          .mapa-detalles__detalles-paquete-info__estado-agencia__estado-info__info-estado-2 p {
+            text-align: center;
+            color: #404040;
+            font-family: "PT Sans", sans-serif;
+            font-size: 1.5rem; }
+
+.informacion-agencia-admin {
+  width: 100%;
+  height: 40rem;
+  display: flex;
+  justify-content: center; }
+  .informacion-agencia-admin__cuadro-1 {
+    background-color: #404040;
+    width: 24rem;
+    height: 13rem;
+    margin: 12rem 7rem;
+    box-shadow: 1rem 1rem 0.5rem rgba(255, 165, 0, 0.4);
+    text-align: center; }
+    .informacion-agencia-admin__cuadro-1__titulo {
+      color: #E6E6E6;
+      font-family: "Roboto", sans-serif;
+      font-size: 1.7rem;
+      font-weight: bold;
+      padding: .5rem 0; }
+    .informacion-agencia-admin__cuadro-1__cont-1 {
+      color: #FFA500;
+      font-family: "PT Sans", sans-serif;
+      font-size: 1.5rem;
+      padding: .5rem 0;
+      cursor: pointer; }
+    .informacion-agencia-admin__cuadro-1 :hover {
+      font-size: 1.7rem; }
+
+/*****************************
+            LAYOUT
+*****************************/
+/*****************************
+            PAGES
+*****************************/
+/*****************************
+            THEMES
+*****************************/
+/*****************************
+            VENDORS
+*****************************/
